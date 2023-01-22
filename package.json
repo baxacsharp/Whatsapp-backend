@@ -9,6 +9,9 @@
         "dev": "nodemon -r dotenv/config -e js ./src/index.js",
         "start": "node ./src/index.js"
     },
+    "engines": {
+       "node": ">=14 <15"
+    },
     "author": "",
     "license": "ISC",
     "dependencies": {
