@@ -13,7 +13,7 @@ import { cookieOptions } from "./auth/tools.js"
 import listEndpoints from "express-list-endpoints"
 import { SlowMinuteSpeedLimiter } from "./services/tools.js"
 import { sockets } from "./index.js"
-
+import abc from "../src/index"
 const server = express()
 
 if (process.env.TS_NODE_DEV || process.env.NODE_ENV === "test")
