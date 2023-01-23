@@ -181,7 +181,7 @@ userRouter.get(
       const pages = Math.ceil(users / query.options.limit)
       res
         .status(200)
-        .send({ navigation: query.links("/users", users), pages, response })
+        .send({ navigation: query.links("users", users), pages, response })
     } catch (error) {
       next(error)
     }
