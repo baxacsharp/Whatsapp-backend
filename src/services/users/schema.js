@@ -257,7 +257,6 @@ const UserSchema = new Schema(
     },
     avatar: {
       type: String,
-      required: true,
       default: "https://bw4-be.herokuapp.com/images/noavatar.png",
     },
   },

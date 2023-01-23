@@ -48,7 +48,7 @@ userRouter.post(
             res.send(user)
           } else next(createError(500, "Something went wrong while logging in"))
         } else next(createError(500, "Something went wrong while registering"))
-      } else next(createError(400, errors.mapped()))
+      } else next(createError(400, console.log(errors.mapped())))
     } catch (error) {
       console.log(error)
       next(error)
